@@ -84,4 +84,7 @@ Run `example` to see usage shown above and modify the code to try your requireme
 
 ## Unit Test
 
-`$ flutter test test/kotlin_scope_function_test.dart`
+```shell
+$ dart pub upgrade test
+$ dart test test/kotlin_scope_function_test.dart
+```
