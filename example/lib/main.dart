@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
                 '.let example:',
                 "final defValue = 10;"
                     "\nvar result = defValue.let((it) {"
-                    "\n\tfinal b = 5;"
-                    "\n\treturn it + b + 5;"
+                    "\n  final b = 5;"
+                    "\n  return it + b + 5;"
                     "\n});",
                 "//print result"
                     "\nresult:${let()}",
@@ -37,8 +37,8 @@ class MyApp extends StatelessWidget {
                 'run example:',
                 "final a = 10;"
                     "\nvar result = run((it) {"
-                    "\n\tfinal b = 5;"
-                    "\n\treturn a + b + 5;"
+                    "\n  final b = 5;"
+                    "\n  return a + b + 5;"
                     "\n});",
                 "//print result"
                     "\nresult:${run1()}",
@@ -47,9 +47,9 @@ class MyApp extends StatelessWidget {
                 '.also example:',
                 "List result = [];"
                     "\na.also((it) {"
-                    "\n\tfinal b = 10;"
-                    "\n\tit.add(b);"
-                    "\n\tit.add(5);"
+                    "\n  final b = 10;"
+                    "\n  it.add(b);"
+                    "\n  it.add(5);"
                     "\n});",
                 "//print result"
                     "\nresult:${also()}",
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
                 '.takeIf example:',
                 "List ref = [\"data\"];"
                     "\nvar result = ref.takeIf((it) {"
-                    "\n\treturn it.isNotEmpty;"
+                    "\n  return it.isNotEmpty;"
                     "\n});",
                 "//print result"
                     "\nresult:${takeIf()}",
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
                 '.takeUnless example:',
                 "List ref = [\"data\"];"
                     "\nvar result = ref.takeUnless((it) {"
-                    "\n\treturn it.isEmpty;"
+                    "\n  return it.isEmpty;"
                     "\n});",
                 "//print result"
                     "\nresult:${takeUnless()}",

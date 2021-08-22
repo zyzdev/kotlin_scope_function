@@ -21,8 +21,9 @@ extension ObjectE<T extends Object> on T {
   /// final a = [];
   /// a.also((it) => it.add("element"));
   /// print(a); > element
-  void also(void Function(T it) dealing) {
+  T also(void Function(T it) dealing) {
     dealing(this);
+    return this;
   }
 
   /// 'takeIf' returns object self if it matches the predicate. Otherwise, it returns null.

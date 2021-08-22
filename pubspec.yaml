@@ -1,6 +1,6 @@
 name: kotlin_scope_function
 description: This is an utility package that providing Kotlin scope function implement by Dart.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/zyzdev/kotlin_scope_function
 
 environment:
